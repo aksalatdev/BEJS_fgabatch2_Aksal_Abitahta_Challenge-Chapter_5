@@ -1,68 +1,29 @@
+# Swagger-tdd-authLite
 
-# Simple Bank System
+Ini adalah project backend sederhana yang menggunakan Express.js, Prisma, JWT untuk autentikasi, dan Swagger untuk dokumentasi API. Proyek ini juga menerapkan TDD (Test Driven Development) menggunakan Jest dan Supertest.
 
-This is a RESTful API built with Node.js, Express, and Prisma for managing users, bank accounts, and transactions.
+## Fitur
 
+- Autentikasi menggunakan JWT (JSON Web Token)
+- Dokumentasi API menggunakan Swagger UI
+- CRUD user, transaksi, dan akun bank
+- Unit testing untuk setiap endpoint dengan Jest dan Supertest
 
+## Teknologi yang digunakan
 
+- Node.js
+- Express.js
+- Prisma ORM
+- PostgreSQL
+- JWT (JSON Web Token)
+- Jest untuk testing
+- Supertest untuk API testing
+- Swagger untuk dokumentasi API
 
-## Run Locally
+## Instalasi
 
-Clone the project
-
-```bash
-  git clone https://github.com/aksalatdev/BEJS_fgabatch2_Aksal_Abitahta_Challenge-Chapter_4.git
-```
-
-Go to the project directory
-
-```bash
-  BEJS_fgabatch2_Aksal_Abitahta_Challenge-Chapter_4
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-### Set up environment variables:
-Create a .env file in the root directory and add the following:
-```
-DATABASE_URL="postgresql://username:password@localhost:5432/mydatabase"
-PORT=3000
-```
-### Set up the database:
-
-Initialize Prisma and apply the migrations:
-```
-npx prisma migrate dev --name init
-npx prisma generate
-```
-
-### Start the server
+1. Clone repository ini:
 
 ```bash
-  npm run start
-```
-
-
-## Testing for API
-
-## Users
-Create User
-
-Endpoint: POST /api/v1/users
-
-Body : 
-```
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123",
-  "identity_type": "ID Card",
-  "identity_number": "123456789",
-  "address": "123 Main St"
-}
-
+git clone https://github.com/username/repository-name.git
 ```
